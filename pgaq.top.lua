@@ -140,7 +140,7 @@ BackgroundImage.ImageTransparency = 0.900
 
 -- Scripts:
 
-local function XVLVUR_fake_script() -- ExpandHitboxButton.LocalScript 
+local function MEITJS_fake_script() -- ExpandHitboxButton.LocalScript 
 	local script = Instance.new('LocalScript', ExpandHitboxButton)
 
 	script.Parent.Activated:Connect(function()
@@ -164,16 +164,16 @@ local function XVLVUR_fake_script() -- ExpandHitboxButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XVLVUR_fake_script)()
-local function KQKCTRV_fake_script() -- CloseButton.LocalScript 
+coroutine.wrap(MEITJS_fake_script)()
+local function KUJTC_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	script.Parent.Activated:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(KQKCTRV_fake_script)()
-local function MMAEM_fake_script() -- AimbotButton.LocalScript 
+coroutine.wrap(KUJTC_fake_script)()
+local function SMYQ_fake_script() -- AimbotButton.LocalScript 
 	local script = Instance.new('LocalScript', AimbotButton)
 
 	script.Parent.Activated:Connect(function()
@@ -182,12 +182,12 @@ local function MMAEM_fake_script() -- AimbotButton.LocalScript
 		local TS = game:GetService("TweenService")
 		local tweenInfo = TweenInfo.new(0.25)
 	
-		local function getClosest()
+		function getClosest()
 			local closestDistance = math.huge
 			local closestPlayer = nil
 			for i,v in pairs(game:GetService("Players"):GetChildren()) do
-				if v ~= game:GetService("Players").LocalPlayer then --and v.Team ~= game:GetService("Players").LocalPlayer.Team
-					local distance = (game:GetService("Players").Character:FindFirstChild("HumanoidRootPart").Position - v.Character:FindFirstChild("HumanoidRootPart").Position).magnitude
+				if v ~= game:GetService("Players").LocalPlayer then
+					local distance = (game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Position - v.Character:FindFirstChild("HumanoidRootPart").Position).magnitude
 					if distance < closestDistance then
 						closestDistance = distance
 						closestPlayer = v
@@ -200,10 +200,9 @@ local function MMAEM_fake_script() -- AimbotButton.LocalScript
 		UIS.InputBegan:Connect(function(input)
 			if input.UserInputType == Enum.UserInputType.MouseButton2 then
 				_G.aim = true
-				while wait() do
-					local tween = TS:Create(camera, tweenInfo, {CFrame = CFrame.new(camera.CFrame.Position, getClosest().Character.Head.Position)})
-					tween:Play()
-					if _G.aim == false then tween:Cancel() return end
+				while task.wait() do
+					camera.CFrame = CFrame.new(camera.CFrame.Position, getClosest().Character.Head.Position)
+					if _G.aim == false then return end
 				end
 			end
 		end)
@@ -215,8 +214,8 @@ local function MMAEM_fake_script() -- AimbotButton.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(MMAEM_fake_script)()
-local function UNTY_fake_script() -- ESPButton.LocalScript 
+coroutine.wrap(SMYQ_fake_script)()
+local function JGFCFX_fake_script() -- ESPButton.LocalScript 
 	local script = Instance.new('LocalScript', ESPButton)
 
 	local isHighlightActive = false
@@ -235,10 +234,16 @@ local function UNTY_fake_script() -- ESPButton.LocalScript
 							highlight = Instance.new("Highlight")
 							highlight.Parent = player.Character
 						end
+						if player.Team then
+							highlight.FillColor = player.Team.TeamColor.Color
+						end
 					end
 					player.CharacterAdded:Connect(function(character)
 						local highlight = Instance.new("Highlight")
 						highlight.Parent = character
+						if player.Team then
+							highlight.FillColor = player.Team.TeamColor.Color
+						end
 					end)
 				end
 			end
@@ -256,11 +261,9 @@ local function UNTY_fake_script() -- ESPButton.LocalScript
 			end
 		end
 	end)
-	
-	
 end
-coroutine.wrap(UNTY_fake_script)()
-local function JALLTHP_fake_script() -- Main.UIDrag 
+coroutine.wrap(JGFCFX_fake_script)()
+local function HHWLLDT_fake_script() -- Main.UIDrag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -298,8 +301,8 @@ local function JALLTHP_fake_script() -- Main.UIDrag
 		end
 	end)
 end
-coroutine.wrap(JALLTHP_fake_script)()
-local function OIGB_fake_script() -- pgaqtop.s3cure 
+coroutine.wrap(HHWLLDT_fake_script)()
+local function YNUB_fake_script() -- pgaqtop.s3cure 
 	local script = Instance.new('LocalScript', pgaqtop)
 
 	local function randomString()
@@ -313,4 +316,4 @@ local function OIGB_fake_script() -- pgaqtop.s3cure
 	
 	script.Parent.Name = randomString()
 end
-coroutine.wrap(OIGB_fake_script)()
+coroutine.wrap(YNUB_fake_script)()
