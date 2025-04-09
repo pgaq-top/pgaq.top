@@ -4,43 +4,64 @@ local pgaqtop = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local CloseButton = Instance.new("TextButton")
 local BackgroundImage = Instance.new("ImageLabel")
-local Section = Instance.new("Frame")
-local Buttons1 = Instance.new("Frame")
+local Sections = Instance.new("Frame")
+local Section1 = Instance.new("Frame")
+local Buttons2 = Instance.new("Frame")
 local Frame = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local SectionTitle = Instance.new("TextLabel")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Buttons1 = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
 local Toggle1 = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local Toggle = Instance.new("Frame")
 local Toggle3 = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
+local Toggle_2 = Instance.new("Frame")
 local Toggle2 = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local Toggle_2 = Instance.new("Frame")
-local UIListLayout = Instance.new("UIListLayout")
+local Toggle_3 = Instance.new("Frame")
+local UIListLayout_3 = Instance.new("UIListLayout")
 local Toggle4 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local SectionTitle = Instance.new("TextLabel")
-local Buttons3 = Instance.new("Frame")
-local Frame_2 = Instance.new("Frame")
-local UIListLayout_2 = Instance.new("UIListLayout")
+local Toggle_4 = Instance.new("Frame")
+local SectionTitle_2 = Instance.new("TextLabel")
+local Section2 = Instance.new("Frame")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local Buttons1_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local UIListLayout_5 = Instance.new("UIListLayout")
 local Toggle1_2 = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local Toggle_3 = Instance.new("Frame")
-local SectionTitle_2 = Instance.new("TextLabel")
-local UIListLayout_3 = Instance.new("UIListLayout")
-local Buttons2 = Instance.new("Frame")
-local Frame_3 = Instance.new("Frame")
-local UIListLayout_4 = Instance.new("UIListLayout")
-local Toggle1_3 = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local Toggle_4 = Instance.new("Frame")
-local Toggle3_2 = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
 local Toggle_5 = Instance.new("Frame")
-local Toggle2_2 = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
+local Toggle3_2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 local Toggle_6 = Instance.new("Frame")
+local Toggle2_2 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Toggle_7 = Instance.new("Frame")
+local Toggle4_2 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Toggle_8 = Instance.new("Frame")
 local SectionTitle_3 = Instance.new("TextLabel")
 local Title = Instance.new("TextLabel")
+local Tabs = Instance.new("Frame")
+local UIListLayout_6 = Instance.new("UIListLayout")
+local Tab1 = Instance.new("TextButton")
+local Tab2 = Instance.new("TextButton")
+local Tab3 = Instance.new("TextButton")
+local Tab4 = Instance.new("TextButton")
+local Design = Instance.new("Frame")
+local TopLine = Instance.new("Frame")
+local PenumbraShadow = Instance.new("ImageLabel")
+local Line = Instance.new("Frame")
+local PenumbraShadow_2 = Instance.new("ImageLabel")
+local Line_2 = Instance.new("Frame")
+local PenumbraShadow_3 = Instance.new("ImageLabel")
+local BottomLine = Instance.new("Frame")
+local PenumbraShadow_4 = Instance.new("ImageLabel")
+local PenumbraShadow_5 = Instance.new("ImageLabel")
 
 pgaqtop.Name = "pgaqtop"
 pgaqtop.Parent = game:GetService("CoreGui")
@@ -63,7 +84,7 @@ CloseButton.BackgroundTransparency = 1.000
 CloseButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 CloseButton.BorderSizePixel = 0
 CloseButton.Position = UDim2.new(1, 0, 0, 0)
-CloseButton.Size = UDim2.new(0, 25, 0, 25)
+CloseButton.Size = UDim2.new(0, 30, 0, 30)
 CloseButton.Font = Enum.Font.Jura
 CloseButton.Text = "×"
 CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -81,33 +102,78 @@ BackgroundImage.Image = "http://www.roblox.com/asset/?id=73999427332046"
 BackgroundImage.ImageTransparency = 1.000
 BackgroundImage.ScaleType = Enum.ScaleType.Crop
 
-Section.Name = "Section"
-Section.Parent = Main
-Section.AnchorPoint = Vector2.new(0.5, 1)
-Section.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Section.BackgroundTransparency = 1.000
-Section.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Section.BorderSizePixel = 0
-Section.Position = UDim2.new(0.5, 0, 1, 0)
-Section.Size = UDim2.new(0.949999988, 0, 0.899999976, 0)
+Sections.Name = "Sections"
+Sections.Parent = Main
+Sections.AnchorPoint = Vector2.new(0.5, 1)
+Sections.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Sections.BackgroundTransparency = 1.000
+Sections.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Sections.BorderSizePixel = 0
+Sections.Position = UDim2.new(0.5, 0, 1, 0)
+Sections.Size = UDim2.new(0.899999976, 0, 0.824999988, 0)
 
-Buttons1.Name = "Buttons1"
-Buttons1.Parent = Section
-Buttons1.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Buttons1.BackgroundTransparency = 0.500
-Buttons1.BorderColor3 = Color3.fromRGB(225, 225, 225)
-Buttons1.Position = UDim2.new(0.0250000004, 0, 0.0500000007, 0)
-Buttons1.Size = UDim2.new(0.449999988, 0, 0.5, 0)
+Section1.Name = "Section1"
+Section1.Parent = Sections
+Section1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Section1.BackgroundTransparency = 1.000
+Section1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Section1.BorderSizePixel = 0
+Section1.Size = UDim2.new(1, 0, 1, 0)
 
-Frame.Parent = Buttons1
+Buttons2.Name = "Buttons2"
+Buttons2.Parent = Section1
+Buttons2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Buttons2.BackgroundTransparency = 0.500
+Buttons2.BorderColor3 = Color3.fromRGB(5, 5, 5)
+Buttons2.BorderSizePixel = 2
+Buttons2.Size = UDim2.new(0.449999988, 0, 0.400000006, 0)
+Buttons2.Visible = false
+
+Frame.Parent = Buttons2
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Size = UDim2.new(1, 0, 1, 0)
 
+UIListLayout.Parent = Frame
+
+SectionTitle.Name = "SectionTitle"
+SectionTitle.Parent = Buttons2
+SectionTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SectionTitle.BackgroundTransparency = 1.000
+SectionTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle.BorderSizePixel = 0
+SectionTitle.Position = UDim2.new(0.0500000007, 0, -0.125, 0)
+SectionTitle.Size = UDim2.new(0, 75, 0, 30)
+SectionTitle.Font = Enum.Font.SourceSans
+SectionTitle.Text = "Fullbright"
+SectionTitle.TextColor3 = Color3.fromRGB(225, 225, 225)
+SectionTitle.TextSize = 18.000
+SectionTitle.TextStrokeTransparency = 0.000
+SectionTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+UIListLayout_2.Parent = Section1
+UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_2.Padding = UDim.new(0.0250000004, 0)
+
+Buttons1.Name = "Buttons1"
+Buttons1.Parent = Section1
+Buttons1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Buttons1.BackgroundTransparency = 0.500
+Buttons1.BorderColor3 = Color3.fromRGB(5, 5, 5)
+Buttons1.BorderSizePixel = 2
+Buttons1.Size = UDim2.new(0.449999988, 0, 0.5, 0)
+
+Frame_2.Parent = Buttons1
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Size = UDim2.new(1, 0, 1, 0)
+
 Toggle1.Name = "Toggle1"
-Toggle1.Parent = Frame
+Toggle1.Parent = Frame_2
 Toggle1.AnchorPoint = Vector2.new(0.5, 0)
 Toggle1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Toggle1.BackgroundTransparency = 1.000
@@ -116,7 +182,7 @@ Toggle1.BorderSizePixel = 0
 Toggle1.Position = UDim2.new(0.5, 0, 0, 0)
 Toggle1.Size = UDim2.new(1, 0, 0, 25)
 Toggle1.Font = Enum.Font.Jura
-Toggle1.Text = "Aimbot"
+Toggle1.Text = "Aimbot [C]"
 Toggle1.TextColor3 = Color3.fromRGB(255, 255, 255)
 Toggle1.TextSize = 18.000
 Toggle1.TextWrapped = true
@@ -127,13 +193,13 @@ Toggle.Name = "Toggle"
 Toggle.Parent = Toggle1
 Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
 Toggle.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Toggle.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Toggle.BorderColor3 = Color3.fromRGB(5, 5, 5)
 Toggle.BorderSizePixel = 2
 Toggle.Position = UDim2.new(0.100000001, 0, 0.5, 0)
 Toggle.Size = UDim2.new(0, 15, 0, 15)
 
 Toggle3.Name = "Toggle3"
-Toggle3.Parent = Frame
+Toggle3.Parent = Frame_2
 Toggle3.AnchorPoint = Vector2.new(0.5, 0)
 Toggle3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Toggle3.BackgroundTransparency = 1.000
@@ -149,8 +215,18 @@ Toggle3.TextWrapped = true
 
 UICorner_2.Parent = Toggle3
 
+Toggle_2.Name = "Toggle"
+Toggle_2.Parent = Toggle3
+Toggle_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Toggle_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Toggle_2.BorderColor3 = Color3.fromRGB(5, 5, 5)
+Toggle_2.BorderSizePixel = 2
+Toggle_2.Position = UDim2.new(0.100000001, 0, 0.5, 0)
+Toggle_2.Size = UDim2.new(0, 15, 0, 15)
+Toggle_2.Visible = false
+
 Toggle2.Name = "Toggle2"
-Toggle2.Parent = Frame
+Toggle2.Parent = Frame_2
 Toggle2.AnchorPoint = Vector2.new(0.5, 0)
 Toggle2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Toggle2.BackgroundTransparency = 1.000
@@ -166,20 +242,20 @@ Toggle2.TextWrapped = true
 
 UICorner_3.Parent = Toggle2
 
-Toggle_2.Name = "Toggle"
-Toggle_2.Parent = Toggle2
-Toggle_2.AnchorPoint = Vector2.new(0.5, 0.5)
-Toggle_2.BackgroundColor3 = Color3.fromRGB(42, 83, 125)
-Toggle_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
-Toggle_2.BorderSizePixel = 2
-Toggle_2.Position = UDim2.new(0.100000001, 0, 0.5, 0)
-Toggle_2.Size = UDim2.new(0, 15, 0, 15)
-Toggle_2.Visible = false
+Toggle_3.Name = "Toggle"
+Toggle_3.Parent = Toggle2
+Toggle_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Toggle_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Toggle_3.BorderColor3 = Color3.fromRGB(5, 5, 5)
+Toggle_3.BorderSizePixel = 2
+Toggle_3.Position = UDim2.new(0.100000001, 0, 0.5, 0)
+Toggle_3.Size = UDim2.new(0, 15, 0, 15)
+Toggle_3.Visible = false
 
-UIListLayout.Parent = Frame
+UIListLayout_3.Parent = Frame_2
 
 Toggle4.Name = "Toggle4"
-Toggle4.Parent = Frame
+Toggle4.Parent = Frame_2
 Toggle4.AnchorPoint = Vector2.new(0.5, 0)
 Toggle4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Toggle4.BackgroundTransparency = 1.000
@@ -188,47 +264,70 @@ Toggle4.BorderSizePixel = 0
 Toggle4.Position = UDim2.new(0.5, 0, 0, 0)
 Toggle4.Size = UDim2.new(1, 0, 0, 25)
 Toggle4.Font = Enum.Font.Jura
-Toggle4.Text = "Triggerbot [Key: T]"
+Toggle4.Text = "Triggerbot [T]"
 Toggle4.TextColor3 = Color3.fromRGB(255, 255, 255)
 Toggle4.TextSize = 18.000
 Toggle4.TextWrapped = true
 
 UICorner_4.Parent = Toggle4
 
-SectionTitle.Name = "SectionTitle"
-SectionTitle.Parent = Buttons1
-SectionTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SectionTitle.BackgroundTransparency = 1.000
-SectionTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SectionTitle.BorderSizePixel = 0
-SectionTitle.Position = UDim2.new(0.0500000007, 0, -0.125, 0)
-SectionTitle.Size = UDim2.new(0, 75, 0, 30)
-SectionTitle.Font = Enum.Font.SourceSans
-SectionTitle.Text = "Main"
-SectionTitle.TextColor3 = Color3.fromRGB(225, 225, 225)
-SectionTitle.TextSize = 18.000
-SectionTitle.TextStrokeTransparency = 0.000
-SectionTitle.TextXAlignment = Enum.TextXAlignment.Left
+Toggle_4.Name = "Toggle"
+Toggle_4.Parent = Toggle4
+Toggle_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Toggle_4.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Toggle_4.BorderColor3 = Color3.fromRGB(5, 5, 5)
+Toggle_4.BorderSizePixel = 2
+Toggle_4.Position = UDim2.new(0.100000001, 0, 0.5, 0)
+Toggle_4.Size = UDim2.new(0, 15, 0, 15)
+Toggle_4.Visible = false
 
-Buttons3.Name = "Buttons3"
-Buttons3.Parent = Section
-Buttons3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Buttons3.BackgroundTransparency = 0.500
-Buttons3.BorderColor3 = Color3.fromRGB(225, 225, 225)
-Buttons3.Position = UDim2.new(0.0250000004, 0, 0.0500000007, 0)
-Buttons3.Size = UDim2.new(0.449999988, 0, 0.400000006, 0)
+SectionTitle_2.Name = "SectionTitle"
+SectionTitle_2.Parent = Buttons1
+SectionTitle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SectionTitle_2.BackgroundTransparency = 1.000
+SectionTitle_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SectionTitle_2.BorderSizePixel = 0
+SectionTitle_2.Position = UDim2.new(0.0500000007, 0, -0.125, 0)
+SectionTitle_2.Size = UDim2.new(0, 75, 0, 30)
+SectionTitle_2.Font = Enum.Font.SourceSans
+SectionTitle_2.Text = "Main"
+SectionTitle_2.TextColor3 = Color3.fromRGB(225, 225, 225)
+SectionTitle_2.TextSize = 18.000
+SectionTitle_2.TextStrokeTransparency = 0.000
+SectionTitle_2.TextXAlignment = Enum.TextXAlignment.Left
 
-Frame_2.Parent = Buttons3
-Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame_2.BackgroundTransparency = 1.000
-Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BorderSizePixel = 0
-Frame_2.Size = UDim2.new(1, 0, 1, 0)
+Section2.Name = "Section2"
+Section2.Parent = Sections
+Section2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Section2.BackgroundTransparency = 1.000
+Section2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Section2.BorderSizePixel = 0
+Section2.Size = UDim2.new(1, 0, 1, 0)
+Section2.Visible = false
 
-UIListLayout_2.Parent = Frame_2
+UIListLayout_4.Parent = Section2
+UIListLayout_4.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_4.Padding = UDim.new(0.0250000004, 0)
+
+Buttons1_2.Name = "Buttons1"
+Buttons1_2.Parent = Section2
+Buttons1_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Buttons1_2.BackgroundTransparency = 0.500
+Buttons1_2.BorderColor3 = Color3.fromRGB(5, 5, 5)
+Buttons1_2.BorderSizePixel = 2
+Buttons1_2.Size = UDim2.new(0.449999988, 0, 0.5, 0)
+
+Frame_3.Parent = Buttons1_2
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BackgroundTransparency = 1.000
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Size = UDim2.new(1, 0, 1, 0)
+
+UIListLayout_5.Parent = Frame_3
 
 Toggle1_2.Name = "Toggle1"
-Toggle1_2.Parent = Frame_2
+Toggle1_2.Parent = Frame_3
 Toggle1_2.AnchorPoint = Vector2.new(0.5, 0)
 Toggle1_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Toggle1_2.BackgroundTransparency = 1.000
@@ -237,85 +336,21 @@ Toggle1_2.BorderSizePixel = 0
 Toggle1_2.Position = UDim2.new(0.5, 0, 0, 0)
 Toggle1_2.Size = UDim2.new(1, 0, 0, 25)
 Toggle1_2.Font = Enum.Font.Jura
-Toggle1_2.Text = "Fullbright"
+Toggle1_2.Text = "ESP"
 Toggle1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Toggle1_2.TextSize = 18.000
 Toggle1_2.TextWrapped = true
 
 UICorner_5.Parent = Toggle1_2
 
-Toggle_3.Name = "Toggle"
-Toggle_3.Parent = Toggle1_2
-Toggle_3.AnchorPoint = Vector2.new(0.5, 0.5)
-Toggle_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Toggle_3.BorderColor3 = Color3.fromRGB(30, 30, 30)
-Toggle_3.BorderSizePixel = 2
-Toggle_3.Position = UDim2.new(0.100000001, 0, 0.5, 0)
-Toggle_3.Size = UDim2.new(0, 15, 0, 15)
-
-SectionTitle_2.Name = "SectionTitle"
-SectionTitle_2.Parent = Buttons3
-SectionTitle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SectionTitle_2.BackgroundTransparency = 1.000
-SectionTitle_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SectionTitle_2.BorderSizePixel = 0
-SectionTitle_2.Position = UDim2.new(0.0500000007, 0, -0.125, 0)
-SectionTitle_2.Size = UDim2.new(0, 75, 0, 30)
-SectionTitle_2.Font = Enum.Font.SourceSans
-SectionTitle_2.Text = "Fullbright"
-SectionTitle_2.TextColor3 = Color3.fromRGB(225, 225, 225)
-SectionTitle_2.TextSize = 18.000
-SectionTitle_2.TextStrokeTransparency = 0.000
-SectionTitle_2.TextXAlignment = Enum.TextXAlignment.Left
-
-UIListLayout_3.Parent = Section
-UIListLayout_3.FillDirection = Enum.FillDirection.Horizontal
-UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIListLayout_3.VerticalAlignment = Enum.VerticalAlignment.Top
-UIListLayout_3.Padding = UDim.new(0.0250000004, 0)
-
-Buttons2.Name = "Buttons2"
-Buttons2.Parent = Section
-Buttons2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Buttons2.BackgroundTransparency = 0.500
-Buttons2.BorderColor3 = Color3.fromRGB(225, 225, 225)
-Buttons2.Position = UDim2.new(0.0250000004, 0, 0.0500000007, 0)
-Buttons2.Size = UDim2.new(0.449999988, 0, 0.5, 0)
-
-Frame_3.Parent = Buttons2
-Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame_3.BackgroundTransparency = 1.000
-Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_3.BorderSizePixel = 0
-Frame_3.Size = UDim2.new(1, 0, 1, 0)
-
-UIListLayout_4.Parent = Frame_3
-
-Toggle1_3.Name = "Toggle1"
-Toggle1_3.Parent = Frame_3
-Toggle1_3.AnchorPoint = Vector2.new(0.5, 0)
-Toggle1_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Toggle1_3.BackgroundTransparency = 1.000
-Toggle1_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Toggle1_3.BorderSizePixel = 0
-Toggle1_3.Position = UDim2.new(0.5, 0, 0, 0)
-Toggle1_3.Size = UDim2.new(1, 0, 0, 25)
-Toggle1_3.Font = Enum.Font.Jura
-Toggle1_3.Text = "ESP"
-Toggle1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Toggle1_3.TextSize = 18.000
-Toggle1_3.TextWrapped = true
-
-UICorner_6.Parent = Toggle1_3
-
-Toggle_4.Name = "Toggle"
-Toggle_4.Parent = Toggle1_3
-Toggle_4.AnchorPoint = Vector2.new(0.5, 0.5)
-Toggle_4.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Toggle_4.BorderColor3 = Color3.fromRGB(30, 30, 30)
-Toggle_4.BorderSizePixel = 2
-Toggle_4.Position = UDim2.new(0.100000001, 0, 0.5, 0)
-Toggle_4.Size = UDim2.new(0, 15, 0, 15)
+Toggle_5.Name = "Toggle"
+Toggle_5.Parent = Toggle1_2
+Toggle_5.AnchorPoint = Vector2.new(0.5, 0.5)
+Toggle_5.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Toggle_5.BorderColor3 = Color3.fromRGB(5, 5, 5)
+Toggle_5.BorderSizePixel = 2
+Toggle_5.Position = UDim2.new(0.100000001, 0, 0.5, 0)
+Toggle_5.Size = UDim2.new(0, 15, 0, 15)
 
 Toggle3_2.Name = "Toggle3"
 Toggle3_2.Parent = Frame_3
@@ -332,16 +367,16 @@ Toggle3_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Toggle3_2.TextSize = 18.000
 Toggle3_2.TextWrapped = true
 
-UICorner_7.Parent = Toggle3_2
+UICorner_6.Parent = Toggle3_2
 
-Toggle_5.Name = "Toggle"
-Toggle_5.Parent = Toggle3_2
-Toggle_5.AnchorPoint = Vector2.new(0.5, 0.5)
-Toggle_5.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Toggle_5.BorderColor3 = Color3.fromRGB(30, 30, 30)
-Toggle_5.BorderSizePixel = 2
-Toggle_5.Position = UDim2.new(0.100000001, 0, 0.5, 0)
-Toggle_5.Size = UDim2.new(0, 15, 0, 15)
+Toggle_6.Name = "Toggle"
+Toggle_6.Parent = Toggle3_2
+Toggle_6.AnchorPoint = Vector2.new(0.5, 0.5)
+Toggle_6.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Toggle_6.BorderColor3 = Color3.fromRGB(5, 5, 5)
+Toggle_6.BorderSizePixel = 2
+Toggle_6.Position = UDim2.new(0.100000001, 0, 0.5, 0)
+Toggle_6.Size = UDim2.new(0, 15, 0, 15)
 
 Toggle2_2.Name = "Toggle2"
 Toggle2_2.Parent = Frame_3
@@ -358,19 +393,45 @@ Toggle2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Toggle2_2.TextSize = 18.000
 Toggle2_2.TextWrapped = true
 
-UICorner_8.Parent = Toggle2_2
+UICorner_7.Parent = Toggle2_2
 
-Toggle_6.Name = "Toggle"
-Toggle_6.Parent = Toggle2_2
-Toggle_6.AnchorPoint = Vector2.new(0.5, 0.5)
-Toggle_6.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Toggle_6.BorderColor3 = Color3.fromRGB(30, 30, 30)
-Toggle_6.BorderSizePixel = 2
-Toggle_6.Position = UDim2.new(0.100000001, 0, 0.5, 0)
-Toggle_6.Size = UDim2.new(0, 15, 0, 15)
+Toggle_7.Name = "Toggle"
+Toggle_7.Parent = Toggle2_2
+Toggle_7.AnchorPoint = Vector2.new(0.5, 0.5)
+Toggle_7.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Toggle_7.BorderColor3 = Color3.fromRGB(5, 5, 5)
+Toggle_7.BorderSizePixel = 2
+Toggle_7.Position = UDim2.new(0.100000001, 0, 0.5, 0)
+Toggle_7.Size = UDim2.new(0, 15, 0, 15)
+
+Toggle4_2.Name = "Toggle4"
+Toggle4_2.Parent = Frame_3
+Toggle4_2.AnchorPoint = Vector2.new(0.5, 0)
+Toggle4_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Toggle4_2.BackgroundTransparency = 1.000
+Toggle4_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Toggle4_2.BorderSizePixel = 0
+Toggle4_2.Position = UDim2.new(0.5, 0, 0, 0)
+Toggle4_2.Size = UDim2.new(1, 0, 0, 25)
+Toggle4_2.Font = Enum.Font.Jura
+Toggle4_2.Text = "Fullbright"
+Toggle4_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggle4_2.TextSize = 18.000
+Toggle4_2.TextWrapped = true
+
+UICorner_8.Parent = Toggle4_2
+
+Toggle_8.Name = "Toggle"
+Toggle_8.Parent = Toggle4_2
+Toggle_8.AnchorPoint = Vector2.new(0.5, 0.5)
+Toggle_8.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Toggle_8.BorderColor3 = Color3.fromRGB(5, 5, 5)
+Toggle_8.BorderSizePixel = 2
+Toggle_8.Position = UDim2.new(0.100000001, 0, 0.5, 0)
+Toggle_8.Size = UDim2.new(0, 15, 0, 15)
 
 SectionTitle_3.Name = "SectionTitle"
-SectionTitle_3.Parent = Buttons2
+SectionTitle_3.Parent = Buttons1_2
 SectionTitle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SectionTitle_3.BackgroundTransparency = 1.000
 SectionTitle_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -390,64 +451,208 @@ Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
 Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Title.BorderSizePixel = 0
-Title.Position = UDim2.new(0.0250000004, 0, 0, 0)
-Title.Size = UDim2.new(0, 200, 0, 25)
-Title.Font = Enum.Font.Jura
-Title.Text = "pgaq.top | 0.0.3"
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.TextSize = 20.000
+Title.Position = UDim2.new(0.0250000004, 0, 0.00499999989, 0)
+Title.Size = UDim2.new(0, 200, 0, 30)
+Title.Font = Enum.Font.Arcade
+Title.Text = "pgaq.top | v0.0.4"
+Title.TextColor3 = Color3.fromRGB(200, 200, 200)
+Title.TextScaled = true
+Title.TextSize = 18.000
+Title.TextStrokeTransparency = 0.500
+Title.TextWrapped = true
 Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Tabs.Name = "Tabs"
+Tabs.Parent = Main
+Tabs.AnchorPoint = Vector2.new(0.5, 0)
+Tabs.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Tabs.BackgroundTransparency = 1.000
+Tabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tabs.BorderSizePixel = 0
+Tabs.Position = UDim2.new(0.5, 0, 0.0700000003, 0)
+Tabs.Size = UDim2.new(0.949999988, 0, 0.0599999987, 0)
+
+UIListLayout_6.Parent = Tabs
+UIListLayout_6.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_6.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_6.Padding = UDim.new(0.0250000004, 0)
+
+Tab1.Name = "Tab1"
+Tab1.Parent = Tabs
+Tab1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab1.BackgroundTransparency = 1.000
+Tab1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab1.BorderSizePixel = 0
+Tab1.Size = UDim2.new(0, 75, 1, 0)
+Tab1.Font = Enum.Font.SourceSans
+Tab1.Text = "Main"
+Tab1.TextColor3 = Color3.fromRGB(225, 225, 225)
+Tab1.TextSize = 18.000
+
+Tab2.Name = "Tab2"
+Tab2.Parent = Tabs
+Tab2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab2.BackgroundTransparency = 1.000
+Tab2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab2.BorderSizePixel = 0
+Tab2.Size = UDim2.new(0, 75, 1, 0)
+Tab2.Font = Enum.Font.SourceSans
+Tab2.Text = "Visuals"
+Tab2.TextColor3 = Color3.fromRGB(225, 225, 225)
+Tab2.TextSize = 18.000
+
+Tab3.Name = "Tab3"
+Tab3.Parent = Tabs
+Tab3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab3.BackgroundTransparency = 1.000
+Tab3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab3.BorderSizePixel = 0
+Tab3.Size = UDim2.new(0, 75, 1, 0)
+Tab3.Font = Enum.Font.SourceSans
+Tab3.Text = "Combat"
+Tab3.TextColor3 = Color3.fromRGB(225, 225, 225)
+Tab3.TextSize = 18.000
+
+Tab4.Name = "Tab4"
+Tab4.Parent = Tabs
+Tab4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab4.BackgroundTransparency = 1.000
+Tab4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab4.BorderSizePixel = 0
+Tab4.Size = UDim2.new(0, 75, 1, 0)
+Tab4.Font = Enum.Font.SourceSans
+Tab4.Text = "Misc"
+Tab4.TextColor3 = Color3.fromRGB(225, 225, 225)
+Tab4.TextSize = 18.000
+
+Design.Name = "Design"
+Design.Parent = Main
+Design.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Design.BackgroundTransparency = 1.000
+Design.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Design.BorderSizePixel = 0
+Design.Size = UDim2.new(1, 0, 1, 0)
+
+TopLine.Name = "TopLine"
+TopLine.Parent = Design
+TopLine.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TopLine.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopLine.BorderSizePixel = 0
+TopLine.Size = UDim2.new(1, 0, 0, 3)
+
+PenumbraShadow.Name = "PenumbraShadow"
+PenumbraShadow.Parent = TopLine
+PenumbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow.BackgroundTransparency = 1.000
+PenumbraShadow.BorderColor3 = Color3.fromRGB(27, 42, 53)
+PenumbraShadow.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow.ZIndex = 0
+PenumbraShadow.Image = "rbxassetid://1316045217"
+PenumbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow.ImageTransparency = 0.880
+PenumbraShadow.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+Line.Name = "Line"
+Line.Parent = Design
+Line.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0, 0, 0.0700000003, 0)
+Line.Size = UDim2.new(1, 0, 0, 2)
+
+PenumbraShadow_2.Name = "PenumbraShadow"
+PenumbraShadow_2.Parent = Line
+PenumbraShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow_2.BackgroundTransparency = 1.000
+PenumbraShadow_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+PenumbraShadow_2.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow_2.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow_2.ZIndex = 0
+PenumbraShadow_2.Image = "rbxassetid://1316045217"
+PenumbraShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow_2.ImageTransparency = 0.880
+PenumbraShadow_2.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+Line_2.Name = "Line"
+Line_2.Parent = Design
+Line_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Line_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_2.BorderSizePixel = 0
+Line_2.Position = UDim2.new(0, 0, 0.129999995, 0)
+Line_2.Size = UDim2.new(1, 0, 0, 2)
+
+PenumbraShadow_3.Name = "PenumbraShadow"
+PenumbraShadow_3.Parent = Line_2
+PenumbraShadow_3.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow_3.BackgroundTransparency = 1.000
+PenumbraShadow_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+PenumbraShadow_3.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow_3.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow_3.ZIndex = 0
+PenumbraShadow_3.Image = "rbxassetid://1316045217"
+PenumbraShadow_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow_3.ImageTransparency = 0.880
+PenumbraShadow_3.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow_3.SliceCenter = Rect.new(10, 10, 118, 118)
+
+BottomLine.Name = "BottomLine"
+BottomLine.Parent = Design
+BottomLine.AnchorPoint = Vector2.new(0, 1)
+BottomLine.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+BottomLine.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BottomLine.BorderSizePixel = 0
+BottomLine.Position = UDim2.new(0, 0, 1, 0)
+BottomLine.Size = UDim2.new(1, 0, 0, 3)
+
+PenumbraShadow_4.Name = "PenumbraShadow"
+PenumbraShadow_4.Parent = BottomLine
+PenumbraShadow_4.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow_4.BackgroundTransparency = 1.000
+PenumbraShadow_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+PenumbraShadow_4.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow_4.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow_4.ZIndex = 0
+PenumbraShadow_4.Image = "rbxassetid://1316045217"
+PenumbraShadow_4.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow_4.ImageTransparency = 0.880
+PenumbraShadow_4.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow_4.SliceCenter = Rect.new(10, 10, 118, 118)
+
+PenumbraShadow_5.Name = "PenumbraShadow"
+PenumbraShadow_5.Parent = Main
+PenumbraShadow_5.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow_5.BackgroundTransparency = 1.000
+PenumbraShadow_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+PenumbraShadow_5.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow_5.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow_5.ZIndex = 0
+PenumbraShadow_5.Image = "rbxassetid://1316045217"
+PenumbraShadow_5.ImageColor3 = Color3.fromRGB(5, 5, 5)
+PenumbraShadow_5.ImageTransparency = 0.880
+PenumbraShadow_5.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow_5.SliceCenter = Rect.new(10, 10, 118, 118)
 
 -- Scripts:
 
-local function SPYHXZP_fake_script() -- Main.UIDrag 
+local function GHQX_fake_script() -- Main.UIDrag 
 	local script = Instance.new('LocalScript', Main)
 
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0.25
-	local dragStart = nil
-	local startPos = nil
-	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-	
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
-	
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
-		end
-	end)
+	script.Parent.Active = true
+	script.Parent.Draggable = true
 end
-coroutine.wrap(SPYHXZP_fake_script)()
-local function RLGWZCB_fake_script() -- CloseButton.LocalScript 
+coroutine.wrap(GHQX_fake_script)()
+local function LZNYJUD_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	script.Parent.Activated:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(RLGWZCB_fake_script)()
-local function NKDHMT_fake_script() -- Toggle1.LocalScript 
+coroutine.wrap(LZNYJUD_fake_script)()
+local function TLEI_fake_script() -- Toggle1.LocalScript 
 	local script = Instance.new('LocalScript', Toggle1)
 
 	script.Parent.Activated:Connect(function()
@@ -611,8 +816,8 @@ local function NKDHMT_fake_script() -- Toggle1.LocalScript
 		]]
 	end)
 end
-coroutine.wrap(NKDHMT_fake_script)()
-local function ULSJE_fake_script() -- Toggle3.LocalScript 
+coroutine.wrap(TLEI_fake_script)()
+local function IWJZZBM_fake_script() -- Toggle3.LocalScript 
 	local script = Instance.new('LocalScript', Toggle3)
 
 	script.Parent.Activated:Connect(function()
@@ -637,8 +842,8 @@ local function ULSJE_fake_script() -- Toggle3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ULSJE_fake_script)()
-local function SWIC_fake_script() -- Toggle2.LocalScript 
+coroutine.wrap(IWJZZBM_fake_script)()
+local function UNAUMX_fake_script() -- Toggle2.LocalScript 
 	local script = Instance.new('LocalScript', Toggle2)
 
 	script.Parent.Activated:Connect(function()
@@ -679,8 +884,8 @@ local function SWIC_fake_script() -- Toggle2.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(SWIC_fake_script)()
-local function RSUC_fake_script() -- Toggle4.LocalScript 
+coroutine.wrap(UNAUMX_fake_script)()
+local function GTJJQ_fake_script() -- Toggle4.LocalScript 
 	local script = Instance.new('LocalScript', Toggle4)
 
 	script.Parent.Activated:Connect(function()
@@ -735,33 +940,9 @@ local function RSUC_fake_script() -- Toggle4.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(RSUC_fake_script)()
-local function QXSNMY_fake_script() -- Toggle1_2.LocalScript 
+coroutine.wrap(GTJJQ_fake_script)()
+local function LLFABPF_fake_script() -- Toggle1_2.LocalScript 
 	local script = Instance.new('LocalScript', Toggle1_2)
-
-	script.Parent.Activated:Connect(function()
-		if script.Parent.Toggle.BackgroundColor3 == Color3.fromRGB(20, 20, 20) then
-			script.Parent.Toggle.BackgroundColor3 = Color3.fromRGB(42, 83, 125)
-			local function brightFunc()
-				game:GetService("Lighting").Brightness = 2
-				game:GetService("Lighting").ClockTime = 14
-				game:GetService("Lighting").FogEnd = 100000
-				game:GetService("Lighting").GlobalShadows = false
-				game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
-			end
-	
-			brightLoop = game:GetService("RunService").RenderStepped:Connect(brightFunc)
-		else
-			script.Parent.Toggle.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-			if brightLoop then
-				brightLoop:Disconnect()
-			end
-		end
-	end)
-end
-coroutine.wrap(QXSNMY_fake_script)()
-local function VFLEVUG_fake_script() -- Toggle1_3.LocalScript 
-	local script = Instance.new('LocalScript', Toggle1_3)
 
 	local isHighlightActive = false
 	local Players = game:GetService("Players")
@@ -826,8 +1007,8 @@ local function VFLEVUG_fake_script() -- Toggle1_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VFLEVUG_fake_script)()
-local function CIUSXBF_fake_script() -- Toggle3_2.LocalScript 
+coroutine.wrap(LLFABPF_fake_script)()
+local function FYNRAB_fake_script() -- Toggle3_2.LocalScript 
 	local script = Instance.new('LocalScript', Toggle3_2)
 
 	local Players = game:GetService("Players")
@@ -885,8 +1066,8 @@ local function CIUSXBF_fake_script() -- Toggle3_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CIUSXBF_fake_script)()
-local function CLQUHSQ_fake_script() -- Toggle2_2.LocalScript 
+coroutine.wrap(FYNRAB_fake_script)()
+local function SKOBB_fake_script() -- Toggle2_2.LocalScript 
 	local script = Instance.new('LocalScript', Toggle2_2)
 
 	local Players = game:GetService("Players")
@@ -911,8 +1092,66 @@ local function CLQUHSQ_fake_script() -- Toggle2_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CLQUHSQ_fake_script)()
-local function HNPVMR_fake_script() -- pgaqtop.s3cure 
+coroutine.wrap(SKOBB_fake_script)()
+local function QDLGB_fake_script() -- Toggle4_2.LocalScript 
+	local script = Instance.new('LocalScript', Toggle4_2)
+
+	script.Parent.Activated:Connect(function()
+		if script.Parent.Toggle.BackgroundColor3 == Color3.fromRGB(20, 20, 20) then
+			script.Parent.Toggle.BackgroundColor3 = Color3.fromRGB(42, 83, 125)
+			local function brightFunc()
+				game:GetService("Lighting").Brightness = 2
+				game:GetService("Lighting").ClockTime = 14
+				game:GetService("Lighting").FogEnd = 100000
+				game:GetService("Lighting").GlobalShadows = false
+				game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+			end
+	
+			brightLoop = game:GetService("RunService").RenderStepped:Connect(brightFunc)
+		else
+			script.Parent.Toggle.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			if brightLoop then
+				brightLoop:Disconnect()
+			end
+		end
+	end)
+end
+coroutine.wrap(QDLGB_fake_script)()
+local function GXXVOCZ_fake_script() -- Tab1.LocalScript 
+	local script = Instance.new('LocalScript', Tab1)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Sections.Section1.Visible = true
+		script.Parent.Parent.Parent.Sections.Section2.Visible = false
+	end)
+end
+coroutine.wrap(GXXVOCZ_fake_script)()
+local function GVUNLJ_fake_script() -- Tab2.LocalScript 
+	local script = Instance.new('LocalScript', Tab2)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Sections.Section1.Visible = false
+		script.Parent.Parent.Parent.Sections.Section2.Visible = true
+	end)
+end
+coroutine.wrap(GVUNLJ_fake_script)()
+local function UOFKV_fake_script() -- Tab3.LocalScript 
+	local script = Instance.new('LocalScript', Tab3)
+
+	script.Parent.Activated:Connect(function()
+		
+	end)
+end
+coroutine.wrap(UOFKV_fake_script)()
+local function YDWHG_fake_script() -- Tab4.LocalScript 
+	local script = Instance.new('LocalScript', Tab4)
+
+	script.Parent.Activated:Connect(function()
+		
+	end)
+end
+coroutine.wrap(YDWHG_fake_script)()
+local function YDPSGND_fake_script() -- pgaqtop.s3cure 
 	local script = Instance.new('LocalScript', pgaqtop)
 
 	local function randomString()
@@ -926,4 +1165,4 @@ local function HNPVMR_fake_script() -- pgaqtop.s3cure
 	
 	script.Parent.Name = randomString()
 end
-coroutine.wrap(HNPVMR_fake_script)()
+coroutine.wrap(YDPSGND_fake_script)()
